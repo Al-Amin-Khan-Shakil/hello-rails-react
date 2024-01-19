@@ -22,3 +22,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+https://github.com/andrianarivo/react_rails_hello_world/commits/dev/
+
+https://github.com/zunairkhan811/rails-with-react
