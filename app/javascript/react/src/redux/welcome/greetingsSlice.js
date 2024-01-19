@@ -18,13 +18,13 @@ const randomMessage = createSlice({
       })
       .addCase(fetchData.fulfilled, (state, action) => {
         state.loading = false;
-        state.isSuccess = ture;
+        // state.isSuccess = ture;
         state.data = action.payload
       })
       .addCase(fetchData.rejected, (state, action) => {
         state.message = action.payload;
         state.loading = false;
-        state.isSuccess = false;
+        // state.isSuccess = false;
       })
   }
 });
