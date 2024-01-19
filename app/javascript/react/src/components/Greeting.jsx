@@ -9,14 +9,12 @@ const RandomMessage = () => {
   const dispatch = useDispatch();
   
   useEffect(() => {
-    dispatch(fetchData());
-  }, [dispatch]);
-
-  useEffect(() => {
-    if (state.data) {
+    if (state.data && state.data.message) {
       setMsg(state.data.message);
+    } else {
+      dispatch(fetchData());
     }
-  }, [state.data]);
+  }, [dispatch, state.data]);
 
   return (
     <>

@@ -70,3 +70,6 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
 end
+
+# Avoid CORS issues when API is called from the frontend app
+gem 'rack-cors'
